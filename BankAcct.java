@@ -1,4 +1,5 @@
 public class BankAcct {
+    // MEMBER VARIABLES:
     private double checkingBal;
     private double savingsBal;
     private static int numOfAccts = 0;
@@ -6,11 +7,11 @@ public class BankAcct {
 
     // CONSTRUCTOR:
 
-    public double BankAcct(double checkingBal, double savingsBal) {
-        this.checkingBal = 0.0;
-        this.savingsBal = 0.0;
+    public BankAcct(double checkingBal, double savingsBal) {
+        // this.checkingBal = 0.0;
+        this.setCheckingBal(checkingBal);
+        this.savingsBal = savingsBal;
         numOfAccts++;
-        return numOfAccts;
     }
 
     // METHODS:
